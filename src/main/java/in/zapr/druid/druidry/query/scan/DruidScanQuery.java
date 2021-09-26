@@ -45,13 +45,14 @@ public class DruidScanQuery extends DruidQuery {
     private List<String> columns;
     private ResultFormat resultFormat;
     private Long limit;
+    private Long offset;
     private Boolean legacy;
     private DruidScanQueryOrder order;
 
     @Builder
     private DruidScanQuery(@NonNull DataSource dataSource, List<DruidVirtualColumn> virtualColumns, DruidFilter filter,
             Integer batchSize, @NonNull List<Interval> intervals, List<String> columns, ResultFormat resultFormat,
-            Long limit, Boolean legacy, Context context, DruidScanQueryOrder order) {
+            Long limit, Long offset, Boolean legacy, Context context, DruidScanQueryOrder order) {
         this.virtualColumns = virtualColumns;
         this.filter = filter;
         this.intervals = intervals;
@@ -62,6 +63,7 @@ public class DruidScanQuery extends DruidQuery {
         this.dataSource = dataSource;
         this.legacy = legacy;
         this.limit = limit;
+        this.offset = offset;
         this.batchSize = batchSize;
         this.order = order;
         if (limit != null) {

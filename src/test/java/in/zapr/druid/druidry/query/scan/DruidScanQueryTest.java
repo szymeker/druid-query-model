@@ -71,6 +71,7 @@ public class DruidScanQueryTest {
                 .intervals(Collections.singletonList(interval))
                 .batchSize(10000)
                 .limit(1000L)
+                .offset(100L)
                 .legacy(true)
                 .order(DruidScanQueryOrder.ASCENDING)
                 .build();
@@ -99,6 +100,7 @@ public class DruidScanQueryTest {
                 "  \"resultFormat\": \"list\",\n" +
                 "  \"batchSize\": 10000,\n" +
                 "  \"limit\": 1000,\n" +
+                "  \"offset\": 100,\n" +
                 "  \"legacy\": true,\n" +
                 "  \"order\": \"ascending\",\n" +
                 "  \"intervals\": [" +
