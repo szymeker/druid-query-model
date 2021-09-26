@@ -33,7 +33,7 @@ import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class ArithmeticPostAggregatorTest {
 
     private static ObjectMapper objectMapper;

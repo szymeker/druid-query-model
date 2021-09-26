@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import in.zapr.druid.druidry.dimension.enums.OutputType;
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class ExpressionVirtualColumnTest {
     private static ObjectMapper objectMapper;
 

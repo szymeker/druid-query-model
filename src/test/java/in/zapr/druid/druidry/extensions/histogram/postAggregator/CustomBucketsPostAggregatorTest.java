@@ -33,7 +33,7 @@ import java.util.Set;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class CustomBucketsPostAggregatorTest {
 
     private static ObjectMapper objectMapper;
