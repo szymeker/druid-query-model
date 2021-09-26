@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-@Slf4j
+
 public class InvertedMetricTest {
     private static ObjectMapper objectMapper;
 

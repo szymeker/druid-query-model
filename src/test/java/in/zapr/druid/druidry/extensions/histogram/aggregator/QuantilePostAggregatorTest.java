@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class QuantilePostAggregatorTest {
 
     private static ObjectMapper objectMapper;

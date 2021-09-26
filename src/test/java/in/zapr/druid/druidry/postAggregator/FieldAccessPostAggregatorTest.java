@@ -29,7 +29,7 @@ import org.testng.annotations.Test;
 
 import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
+
 public class FieldAccessPostAggregatorTest {
 
     private static ObjectMapper objectMapper;
